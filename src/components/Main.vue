@@ -3,7 +3,7 @@
 		style="max-width: 800px;height:fit-content;display: block;margin:0 auto;background-color:#ffffff;padding:2%">
 		<div style="margin-top: 10px;margin-left: 10px;margin-right: 10px;">
 			<div class="slider-demo-block">
-				<h2>Network Panel<a href="https://github.com/ymyuuu" target="_blank">@Mingyu</a></h2>
+				<h2>Network Panel<a href="https://github.com/ymyuuu/Network-Panel" target="_blank">@Mingyu</a></h2>
 				<span class="font-background">测试地址：</span>
 				<el-button type="primary" :icon="Edit" link @click="EditTableVisible = true" />
 				<br>
