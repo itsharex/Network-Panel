@@ -1,55 +1,36 @@
 # 网络面板
 
-测试您的网速，多地查询您的IP地址，同时具备网络延迟实时检测，流量杀手，流量消耗器，流量消失器
+网络面板是一个多功能的网络工具，可以帮助您测试您的网速，查询多地的IP地址，实时检测网络延迟，管理流量，以及适用于iOS后台运行。这个README将会帮助您了解如何使用网络面板以及其功能。
 
-支持定量完成，支持多线程，适配iOS后台运行。
+## 功能特点
 
-[Demo](https://net.netart.cn/)
+网络面板具有以下功能特点：
 
-这是vue3重写版本，旧版本在old分支，这次重写，主要增加了一下特性：
+1. **网速测试**：您可以使用网络面板来测试您的网络速度，以确定您的下载和上传速度。
 
-1.支持自定义节点
+2. **多地IP查询**：通过网络面板，您可以查询多个地点的IP地址，以便检查您的网络在全球范围内的连接情况。
 
-2.启动之后更改节点与线程数立即生效（旧版本需要重新启动）
+3. **实时网络延迟检测**：网络面板提供实时的网络延迟检测功能，以帮助您监测网络连接的稳定性。
 
-3.线程数和后台开关状态保存
+4. **流量管理**：网络面板包括流量杀手和流量消耗器功能，可帮助您控制和管理您的网络流量。
 
-4.更友好的界面
+5. **多线程支持**：支持多线程操作，可以同时执行多个网络操作，提高效率。
 
+6. **适配iOS后台运行**：网络面板适配iOS，可以在后台运行，不影响您的其他应用程序使用。
 
-## Recommended IDE Setup
+## 使用方法
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+以下是如何使用网络面板的基本步骤：
 
-## Type Support for `.vue` Imports in TS
+1. 打开网络面板应用程序。
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+2. 从主界面选择您要执行的操作，例如网速测试、IP查询、网络延迟检测或流量管理。
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+3. 按照屏幕上的指导完成所选操作。您可以根据您的需求进行定量操作。
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+4. 如果需要在后台运行，请确保已启用适配iOS后台运行的选项。
 
-## Customize configuration
+## 示例
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+您可以查看[示例演示](https://sp.yumy.pp.ua/)以了解网络面板的实际操作。
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
