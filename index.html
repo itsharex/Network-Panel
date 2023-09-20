@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/SPEED.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <title>网络面板</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            margin: 0;
+            font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+        }
+        ::-webkit-scrollbar {
+            display: none; /* Chrome Safari */
+          }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script>// 禁用双击放大(防止按加减按钮误触)
+        var lastTouchEnd = 0
+        if (!!('ontouchstart' in window || navigator.maxTouchPoints)) {
+            document.documentElement.addEventListener(
+                'touchend',
+                function(event) {
+                    var now = Date.now()
+                    if (now - lastTouchEnd <= 300) {
+                        event.preventDefault()
+                    }
+                    lastTouchEnd = now
+                }, {
+                    passive: false
+                }
+            )
+        }
+    </script>
+</body>
+
+</html>
