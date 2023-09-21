@@ -34,4 +34,4 @@
 
 4. 如果需要在后台运行，请确保已启用适配iOS后台运行的选项。
 
-
+本网络面板项目是基于[ljxi/NetworkPanel](https://github.com/ljxi/NetworkPanel)的代码进行改编的。感谢原作者 ljxi 的贡献和开源精神。
