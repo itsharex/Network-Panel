@@ -1,43 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<!-- 全屏设置 -->
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+		<!-- 网站开启对 web app 程序的支持 具体表现为去除浏览器地址栏和底部导航栏 ：先保存为桌面书签，然后通过书签打开即可生效-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- 用来定义顶部状态栏的形式默认是default为白色 black为黑色 black-translucent为灰色半透明（会占据屏幕的约20px，不同的设备可能会有差异）-->
+		<!-- 在定义了apple-mobile-web-app-capable的前提下，设置状态栏的属性值apple-mobile-web-app-status-bar-style才有效； -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/SPEED.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
-    <title>网络面板</title>
-    <style>
-        body{
-            background-color: aliceblue;
-            margin: 0;
-            font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-        }
-        ::-webkit-scrollbar {
-            display: none; /* Chrome Safari */
-          }
-    </style>
-</head>
+		<link rel="icon" href="/SPEED.png">
 
-<body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-    <script>// 禁用双击放大(防止按加减按钮误触)
-        var lastTouchEnd = 0
-        if (!!('ontouchstart' in window || navigator.maxTouchPoints)) {
-            document.documentElement.addEventListener(
-                'touchend',
-                function(event) {
-                    var now = Date.now()
-                    if (now - lastTouchEnd <= 300) {
-                        event.preventDefault()
-                    }
-                    lastTouchEnd = now
-                }, {
-                    passive: false
-                }
-            )
-        }
-    </script>
-</body>
+		<title>网络面板</title>
+		<style>
+			body {
+				background-color: aliceblue;
+				margin: 0;
+				font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+			}
+
+			::-webkit-scrollbar {
+				display: none;
+				/* Chrome Safari */
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app"></div>
+		<script type="module" src="/src/main.ts"></script>
+		<script>
+			// 禁用双击放大(防止按加减按钮误触)
+			var lastTouchEnd = 0
+			if (!!('ontouchstart' in window || navigator.maxTouchPoints)) {
+				document.documentElement.addEventListener(
+					'touchend',
+					function(event) {
+						var now = Date.now()
+						if (now - lastTouchEnd <= 300) {
+							event.preventDefault()
+						}
+						lastTouchEnd = now
+					}, {
+						passive: false
+					}
+				)
+			}
+		</script>
+	</body>
 
 </html>
