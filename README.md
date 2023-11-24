@@ -3,7 +3,7 @@
 网络面板是一个多功能的网络工具，可以帮助您测试您的网速，查询多地的IP地址，实时检测网络延迟，管理流量，以及适用于iOS后台运行。这个README将会帮助您了解如何使用网络面板以及其功能。
 
 ## 示例
-您可以查看[示例演示](https://sp.ymy.gay/)以了解网络面板的实际操作。
+您可以查看[示例演示](https://network-panel-yumy.vercel.app/)以了解网络面板的实际操作。
 <img width="932" alt="image" src="https://github.com/ymyuuu/Network-Panel/assets/135582157/d176e18a-bb63-452b-992c-6fdca3f4997e">
 
 ## 功能特点
